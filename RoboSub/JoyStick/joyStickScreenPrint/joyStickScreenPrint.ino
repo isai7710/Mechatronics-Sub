@@ -1,5 +1,5 @@
 // #define location of pins
-
+//this is kimberly testing what happens when I edit the code on the GitHub page.
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x3F, 16, 2);
