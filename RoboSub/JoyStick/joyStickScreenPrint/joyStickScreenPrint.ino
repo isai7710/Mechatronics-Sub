@@ -46,6 +46,7 @@ void loop() {
   pos1_y = analogRead(joystick1_y);
   pos2_x = analogRead(joystick2_x);
   pos2_y = analogRead(joystick2_y);
+  /*This code prints to the computer screen, not the LCD screen.
   Serial.print("JS 1 X: ");
   Serial.println(pos1_x);
   Serial.print("JS 1 Y: ");
@@ -55,14 +56,15 @@ void loop() {
   Serial.print("JS 2 Y: ");
   Serial.println(pos2_y);
   Serial.println();
-  /*lcd.setCursor(0,0);
+  */
+  lcd.setCursor(0,0);
   lcd.print("JS1 x, y ");
   lcd.print(pos1_x);
   lcd.print(pos1_y);
   lcd.setCursor(0,1);
   lcd.print("JS2 x, y ");
   lcd.print(pos2_x);
-  lcd.print(pos2_y);*/
+  lcd.print(pos2_y);
   delay(4500);
 
   /*Update xVal and yVal using the command 'analogRead(pin)', with 'pin' being one of the #defined pins.
